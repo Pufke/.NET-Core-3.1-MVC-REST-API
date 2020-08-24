@@ -59,3 +59,6 @@ C:\Users\Pufke\Desktop\NET\Commander\bin\Debug\netcoreapp3.1\runtimes\win\lib\ne
 C:\Users\Pufke\Desktop\NET\Commander\obj\Debug\netcoreapp3.1\Commander.csproj.CopyComplete
 C:\Users\Pufke\Desktop\NET\Commander\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Users\Pufke\Desktop\NET\Commander\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Pufke\Desktop\NET\Commander\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Pufke\Desktop\NET\Commander\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Pufke\Desktop\NET\Commander\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
