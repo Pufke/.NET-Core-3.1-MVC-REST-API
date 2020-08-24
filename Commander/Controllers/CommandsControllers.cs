@@ -54,5 +54,22 @@ namespace Commander.Controllers
             //It's really important to pass back location of created item Code : (201 Created) , Parameter Location in Header of HTTP Response
             return CreatedAtRoute(nameof(GetCommandById), new {Id = commandReadDto.Id}, commandReadDto);
         }
+
+        //PUT api/commands/{id}
+        [HttpPut("{id}")]
+        public ActionResult UpdateCommand(int id, CommandUpdateDto commandUpdateDto)
+        {
+            var commandModelFromRepo = _repository.GetCommandById(id);
+            if(commandModelFromRepo == null){
+                return NotFound();
+            }
+
+            _mapper.Map(commandUpdateDto, commandModelFromRepo);
+
+            _repository.UpdateCommand(commandModelFromRepo);
+            _repository.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
